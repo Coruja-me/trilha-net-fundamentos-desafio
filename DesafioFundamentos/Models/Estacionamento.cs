@@ -23,7 +23,7 @@ namespace DesafioFundamentos.Models
             string placa = Console.ReadLine();
 
             var VerifPadrao = new Regex("[A-Z]{3}[0-9]{4}");
-            var VerifMercosul = new Regex("[A-Z]{3}[0-9]{1}[A-Z]{3}[0-9]{1}");
+            var VerifMercosul = new Regex("[A-Z]{3}[0-9]{1}[A-Z]{1}[0-9]{2}");
 
             if (VerifPadrao.IsMatch(placa)||VerifMercosul.IsMatch(placa)){
                 veiculos.Add(placa);
